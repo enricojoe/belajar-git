@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Mager Bank | Tugas-Besar-PBO</title>
+        
+        <!-- CSS FRAMEWORKS REQUIRED -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        {% block stylecontent %}
+
+        {% endblock %}
+        
+        <link rel="stylesheet" href="/static/common-styles.css">
+
+    </head>
+
+    <body>
+        <br><br><br><br><br><br>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
+            <img src="{%static "image/home.png" %}" width="50px">
+            <a class="navbar-brand" href="{% url 'home' %}">&nbsp;Mager Bank</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        
+        <br> <br> <br>
+
+        {% block bodycontent %}
+
+        {% endblock %}
+        
+        <!-- FOOTER -->
+        <section class="foot bg-secondary text-white">
+            <div class="text-center">
+                &copy; Website created with by <a href="https://github.com/VerzFR/Tugas-Besar-PBO" target="_blank">KelompokMager</a>    
+                <br>
+            </div>
+        </section>    
+        
+        <!-- JS LIBRARIES REQUIRED -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        {% block scriptcontent %}
+        {% endblock %}
+        
+    </body>
+</html>
