@@ -9,14 +9,55 @@
     padding: 0;
 }
 
+a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+    text-shadow: 0 0px 1px white;
+}
+
 body {
-    background-color: peachpuff;
+    background-color: rgb(255, 235, 219);
+}
+
+.slot-bar{
+    background-color: rgb(255, 219, 121);
+    height: 75px;
+    max-width: 500px;
+}
+
+.win {
+    box-shadow: 0 0 10px  skyblue;
+}
+
+.slots {
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.slots span {
+    font-size: 45px;
 }
 
 .btn-spin {
     background-color: yellow;
 }
 
-#win{
+.hide {
     visibility: hidden;
+}
+
+.hide-remove {
+    display: none;
+}
+
+#footer {
+    background-color: rgba(65, 65, 65, 0.8);
+    font-size: 0.9rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
 }

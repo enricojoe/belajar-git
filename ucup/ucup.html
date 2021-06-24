@@ -22,31 +22,47 @@
         <div class="content-body">
             <!-- Judul -->
             <div class="container-lg text-center">
-                <h1 class="col-xl-12">RNG Slot Gratis (WIP)</h1>
+                <h1 class="col-xl-12">RNG SLOT GRATIS !!!</h1>
             </div>
             <!-- Slot Machine -->
-            <div class="container col-xl-12 text-center my-4">
-                <div id="win" class="row mx-auto">
-                    <h3 >Selamat! Anda memenangkan : Rp.</h2>
-                    <h3 id="win-prize"></h3>
+            <div class="container-xl text-center my-4 mx-auto">
+                <div id="win-bar" class="mx-auto">
+                    <h3 >Selamat! Anda memenangkan : </h3>
+                    <h3>Rp. <span id="win-prize">500.000.000</span></h3>
                 </div>
-                <div id="slotMachine">
-                    <table id="slotMachineNumber" class="table table-borderless col-8 mx-auto">
-                        <tr id="slotBar" class="border border-dark">
-                            <td class="col-3 border border-dark"><p id="slot1" >7</p></td>
-                            <td class="col-3 border border-dark"><p id="slot2">7</p></td>
-                            <td class="col-3 border border-dark"><p id="slot3">7</p></td>
-                        </tr>
-                    </table>
-                    <button class="btn-lg rounded-pill btn-spin" onclick="alert('Work in Progres')">SPIN !!!</button>
+                <div id="lose-bar" class="mx-auto hide-remove">
+                    <h3 >Anda kurang beruntung. Coba Lagi!</h3>
+                </div>
+                <div id="slotMachine" class="container">
+                    <div id="slot-bar" class="slot-bar row mx-auto border border-dark rounded-pill">
+                        <div class="slots col border-right border-dark">
+                            <span id="slot1">7</span>
+                        </div>
+                        <div class="slots col border-dark">
+                            <span id="slot2">7</span>
+                        </div>
+                        <div class="slots col border-left border-dark">
+                            <span id="slot3">7</span>
+                        </div>
+                    </div>
+                    <button id="btnSpin" class="btn-lg rounded-pill btn-spin my-4" onclick="alert('Work in Progres')">SPIN !!!</button>
                 </div>
             </div>
             <!-- Player info -->
             <div class="container text-center">
                 money : 100
+                <button class="btn-lg rounded-pill" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">Tutorial Tarik Tunai</button>
             </div>
         </div>
         <!-- Main Content -->
+        <!-- Footer -->
+        <footer id="footer" class="footer">
+            <div class="container text-white">
+                <span class="float-left">Copyright &copy 2019 EZMONEY Group, Inc. </span>
+                <a href="#" class="float-right"><span class="col">Terms of Use</span></a>
+            </div>
+        </footer>
+        <!-- Footer -->
     </div>
 </body>
 </html>
