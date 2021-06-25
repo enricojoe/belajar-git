@@ -1,5 +1,6 @@
 from django.db import models
 
+#nambah komenntar
 #class Peminjaman_detail(models.Model):
 #	ID = models.CharField(primary_key=True,max_length=5)
 #	No_Peminjaman = models.ForeignKey("Peminjaman", on_delete=models.CASCADE)
