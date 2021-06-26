@@ -1,2 +1,0 @@
-website dummy, folder yang sudah terinstall dajngo
-dan bisa digunakan
