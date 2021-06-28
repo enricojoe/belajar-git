@@ -1,6 +1,2 @@
-<<<<<<< HEAD
 website dummy, folder yang sudah terinstall dajngo
-=======
-website dummy, folder yang sudah terinstall dajngo
->>>>>>> 76afcea0e8925ce31b27722816d4c1c59c9ee9d7
 dan bisa digunakan
