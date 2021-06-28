@@ -1,0 +1,17 @@
+.navigasi{
+    background-color: tomato;
+}
+.isi{
+    background-color: greenyellow;
+}
+.gambar{
+    background-color: grey;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+}
+.footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+}

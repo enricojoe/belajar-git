@@ -5,12 +5,16 @@
     height: 32rem;
     background:#777;
 }
+.carousel-item >img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+}
 #copyright{
     bottom: 0px;
     width: 100%;
 }
-
-
 #tahunlalu{
     list-style: none;
     text-align: center;
