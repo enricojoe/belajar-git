@@ -1,0 +1,64 @@
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    
+}
+body{
+    background-color: #eaeaea;
+    font : 16px/28px arial,sans-serif;
+}
+.header{
+    padding: 20px;
+    margin-left: -20px;
+}
+h1{
+    font-size: 40px;
+}
+
+.header li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header li a{
+    color: blue;
+}
+
+.header li:hover{
+    color: tomato;
+}
+
+.akaler{
+    background-image: url(../source/Akali_8.jpg);
+    height: 450px;
+    background-size: cover;
+    border-top: 10px solid blue;
+    border-bottom: 10px solid red ; 
+}
+
+.artikel{
+    padding :20px
+}
+.artikel h2{
+    font-size: 50px;
+}
+
+.artikel .isiartikel p{
+    font-size: 23px;
+    text-align: justify;
+}
+
+
+.artikel .penulis{
+    margin-top: -30px;
+}
+
+.footer{
+    background-color:black;
+}
+.footer p {
+    text-align: center;
+    color: white;
+}
