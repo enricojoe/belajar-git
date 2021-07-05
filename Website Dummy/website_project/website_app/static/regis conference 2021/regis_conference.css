@@ -1,0 +1,28 @@
+.header{
+    background-color: rgb(16, 3, 53);
+    width: 100%;
+}
+.header img{
+    width: 20px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
+
+.header a{
+    color: white;
+}
+.header .dropdown-menu{
+    background-color: rgb(16, 3, 53);
+}
+
+.footer{
+    background-color: rgb(16, 3, 53);
+    width: 100%;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    color: white;
+}
+.footer a{
+    color: white;
+}
