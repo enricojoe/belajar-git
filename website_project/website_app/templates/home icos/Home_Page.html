@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICoSITeR 2021 || Apri Kurniawansyah</title>
+    <link rel = "icon" href = "../../static/home_icositer/Logo.jpg" type = "image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        body
+        {
+          background-image: url('../../static/home_icositer/1\ \(2\).png');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: auto;
+          margin-right: 10%;
+          margin-left: 10%;
+        }
+        .bagian1 {
+            background-color: rgb(126, 91, 223);
+            color: white;
+            width: 100%;
+        }
+        .teks-h1{
+            font-size: 50px;
+            color:white;
+            text-align:center;
+            font-weight: bold;
+        }
+        .teks-h2{
+          font-size: 60px;
+          color:rgb(197, 197, 197);
+          text-align:center;
+          font-weight: bold;
+      }
+        .color-teks{
+            color: white;
+        }
+        .bg-logo{
+          background-color: rgb(126, 91, 223);
+          width: 150px;
+          float: left;
+        }       
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+
+        .active {
+          background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 3s;
+          animation-name: fade;
+          animation-duration: 3s;
+        }
+
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .text {font-size: 11px}
+        }
+
+
+        div.gallery {
+          border: 3px solid #ccc;
+          border-radius: 5%;
+          background-color: rgb(39, 155, 68);
+        }
+        
+        div.gallery:hover {
+          border: 3px solid rgb(39, 155, 68);
+          background-color: rgb(39, 155, 68);
+        }
+        
+        div.gallery img {
+          width: 100%;
+          border-radius: 5% 5% 0% 0%;
+          height: auto;
+        }
+        
+        div.desc {
+          padding: 20px;
+          font-family: 'Segoe UI';
+          font-weight: bold;
+          color: white;
+          text-align: center;
+        }
+        div.desc:hover {
+          color: paleturquoise;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .responsive {
+          padding: 0 6px;
+          float: left;
+          width: 24.99999%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+          .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+          }
+        }
+        
+        @media only screen and (max-width: 500px) {
+          .responsive {
+            width: 100%;
+          }
+        }
+        
+        .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="bagian1">
+    <nav class="navbar navbar-expand-lg navbar-inverse " style="background-color: rgb(16, 3, 53);" >
+        <div class="container ">
+          <a class="navbar-brand color-teks" href="#" >
+            <img src="../../static/home_icositer/Logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+              ICoSITeR
+          </a>
+       
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+       
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link color-teks" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link color-teks" href="#tentang">Tentang</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle color-teks " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Tutorial
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown" style="background-color: rgb(16, 3, 53);">
+                  <a class="dropdown-item color-teks"  href="#">Tutorial HTML</a>
+                  <a class="dropdown-item color-teks" href="#">Tutorial CSS</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item color-teks" href="#">Tutorial Bootstrap</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-teks" href="#">Link Mati</a>
+              </li>
+            </ul>
+       
+          </div>
+        </div>
+    </nav>
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="\home_page_icos2021" target="_blank" rel="noopener noreferrer">
+                    <img src="../../static/home_icositer/carousel.png" class="d-block w-100" alt="gambar">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="#">
+                    <img src="../../static/home_icositer/wp5400337-wattson-apex-legends-wallpapers.png" class="d-block w-100" alt="gambar">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </a>    
+            </div>
+            <div class="carousel-item">
+                <a href="#">
+                    <img src="../../static/home_icositer/wp9047899-apex-legends-legacy-wallpapers.jpg" class="d-block w-100" alt="gambar">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </a>    
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+</div>
+
+<br>
+<br>
+
+<div class="bagian1">
+  <h1 class= "teks-h1">Berita</h1>
+  <div class="slideshow-container">
+
+  <div class="mySlides fade" style="text-align:center">
+    <div class="numbertext">1 / 3</div>
+    <img src="../../static/home_icositer/1 (1).jpg" style="width:50%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade" style="text-align:center">
+    <div class="numbertext">2 / 3</div>
+    <img src="../../static/home_icositer/1 (1).png" style="width:50%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade" style="text-align:center">
+    <div class="numbertext">3 / 3</div>
+    <img src="../../static/home_icositer/1 (2).jpg" style="width:50%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+</div>
+<br><br>
+
+<div class="bagian1">
+  <h2 align="center">Galeri Vas Bunga Responsive</h2>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="../../static/home_icositer/1.jpg">
+        <img src="../../static/home_icositer/1.jpg" alt="Tangga" width="100%" height="100%">
+      </a>
+      <div class="desc">Model Anak Tangga</div>
+    </div>
+  </div>
+
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="../../static/home_icositer/2.jpg">
+        <img src="../../static/home_icositer/2.jpg" alt="Telur" width="100%" height="100%">
+      </a>
+      <div class="desc">Model Bulat Telur</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="../../static/home_icositer/3.jpg">
+        <img src="../../static/home_icositer/3.jpg" alt="Hexa Miring" width="100%" height="100%">
+      </a>
+      <div class="desc">Model Hexa Miring</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="../../static/home_icositer/4.jpg">
+        <img src="../../static/home_icositer/4.jpg" alt="Hexa Tegak" width="100%" height="100%">
+      </a>
+      <div class="desc">Model Hexa Tegak</div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+</div>
+<br>
+<br>
+<div class = "bagian1">
+  <div class="container">
+    <h2 class="teks-h2" id="tentang">ICoSITeR 2021</h2>
+    <img class="rounded-circle img-thumbnail bg-logo" src="../../static/home_icositer/Logo.jpg">
+    <p>International Conference on Science, Infrastructure Technology and Regional Development (ICoSITeR) is an annual <br>international conference 2020 which is held by the Institut Teknologi Sumatera (ITERA). 
+    This year, ICoSITeR 2020 presents a theme: “Industry 4.0-based Science and Technology for National Independence and Advancement”. ICoSITeR 2020 is expected to connect <br>between companies, organizations, stakeholders, and academia who are active in the fields of technology and infrastructure. 
+    ICoSITeR 2020 is expected also to be a place for knowledge exchanges, breakthroughs, and ideas related to the development of various fields in an effort to increase the nation’s competitiveness on a global level. ICoSITeR 2020 aims to gather professors, researchers and scholars all over the world.
+    Sponsors will receive recognition participation either before, during or after the event through various publications and material. They may also enjoy significant interactions with speakers and participants during the event. Institut Teknologi Sumatera will hold ICoSITeR 2020 on 23-25 October 2020. 
+    All honorable authors are kindly encouraged to contribute to and help shape the conference through submissions of their research abstracts, papers, and posters. Papers submitted to ICoSITeR 2020 will be reviewed by technical committees of the conference. Selected papers will be published in IOP Conference Proceeding (Scopus Indexed).</p>
+
+  </div>
+</div>
+<br>
+<br>
+<!-- footer -->
+
+<div class="bagian1">
+  <footer class="text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <div>
+            <img class="rounded-circle img-thumbnail" src="../../static/home_icositer/Logo.jpg" style="width:150px">
+          </div>
+          <br>
+          <p>
+            Icositer 2019<br>
+            Green Technology and Infrastructure<br>
+            to Achieve Sustainable Development Goals<br>
+            20/10/19<br><br>
+            Icositer 2019<br>
+            Green Technology and Infrastructure<br>
+            to Achieve Sustainable Development Goals<br>
+            20/10/19<br>
+          </p>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Contact</h5>
+  
+          <p>
+            Jl. Terusan Ryacudu, Way Huwi, Kec. Jati Agung,<br>
+            Kabupaten Lampung Selatan, Lampung 35365<br><br>
+            Email : icositer-2021@gmail.com<br><br>
+            +6281282434826 (M. Abi Berkah nadi)<br>
+          </p>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © - ICoSITeR 2021 -
+      <a class="text-white" href="#"> SUB DIVISION OF WEBSITE ICoSITeR
+      </a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/206142bfe3.js" crossorigin="anonymous"></script>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
