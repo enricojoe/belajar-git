@@ -38,10 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website_app',
-    'kti',
-    'poster',
-    'prototype',
-]
+ ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
